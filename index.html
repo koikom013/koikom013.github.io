@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRA Test PWA</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>
+       JOB HAZARD ANALYSIS
+    </h1>
+
+    <form action="https://script.google.com/macros/s/AKfycbxjmuDp_s3hSVOrBZINhfPPLKe_NSQMbW7MFaJ8ag2smLn7RYny08W0o6CVpzWB_Kk4/exec" 
+    method="post">
+        <div class="jhaIdentification">
+
+            <h2>
+                JHA IDENTIFICATION
+            </h2>
+
+            <div class="labelRow">
+                <label for="jobID"><b>JHA No.</b></label>
+                <label for="jobDetails"><b>Task</b></label>
+                <label for="jobCreator"><b>Prepared by</b></label>
+                <label for="jobFunction"><b>Function</b></label>
+            </div>
+
+            <div class="inputRow">
+                <input type="inputID" name="jobID" required>
+                <input type="inputDetails" name="jobDetails" required>
+                <input type="inputCreator" name="jobCreator" required>
+                <input type="inputFunction" name="jobFunction" required>
+            </div>
+
+        </div>
+
+        <h2>
+            HAZARD IDENTIFICATION
+        </h2>
+
+        <div class="hazardID">
+            <div class="labelLeft">
+                <label for="hazardLocation">Location</label>
+            </div>
+
+            <div class="labelRight">
+                <label for="hazardPermit">Work Permit / Authorization Required</label>                
+            </div>
+        </div>
+
+        <div class="rowSelect">
+            <div class="selectLeft">
+                <div class="grp1">
+                    <input type="radio" id="mainShop" name="loc1" value="Maintenance Workshop">
+                    <label for="loc1">Maintenance Workshop</label><br>
+                    <input type="radio" id="partWare" name="loc1" value="Parts Warehouse">
+                    <label for="loc1">Parts Warehouse</label><br>
+                    <input type="radio" id="office" name="loc1" value="Office">
+                    <label for="loc1">Office</label><br>
+                    <input type="radio" id="minPit" name="loc1" value="Mining Pit">
+                    <label for="loc1">Mining Pit</label><br>
+                    <input type="radio" id="weldShop" name="loc1" value="Welding Workshop">
+                    <label for="loc1">Welding Workshop</label><br>
+                
+                    <input type="radio" id="ProPlant" name="loc1" value="plant">
+                    <label for="loc1">Processing Plant</label><br>
+                </div>
+            </div>
+
+        
+            <div class="selectRight">
+                <div class="grp1">
+                    <input type="checkbox" id="wHeight" name="work[]" value="Working at Heights">
+                    <label for="loc1">Working at Heights</label><br>
+                    <input type="checkbox" id="hotWork" name="work[]" value="Hot Work">
+                    <label for="loc1">Hot Work (Cut / Weld)</label><br>
+                    <input type="checkbox" id="conSpace" name="work[]" value="Confined Space">
+                    <label for="loc1">Confined Space</label><br>
+                    <input type="checkbox" id="heavyLift" name="work[]" value="Heavy Lifting">
+                    <label for="loc1">Heavy Lifting</label><br>
+                    <input type="checkbox" id="exCav" name="work[]" value="Excavation">
+                    <label for="loc1">Excavation</label><br>
+                    <input type="checkbox" id="landDist" name="work[]" value="Land Disturnance">
+                    <label for="loc1">Land Disturbance</label><br>
+                </div>
+                
+                <div class="grp2">
+                    
+                    <input type="checkbox" id="perWork" name="loc7">
+                    <label for="loc1">Permit to Work</label><br>
+                    <input type="checkbox" id="manCage" name="loc8">
+                    <label for="loc1">Man Cage</label><br>
+                </div>
+                
+
+
+            </div>
+            
+        </div>
+
+        <div class="hazardID">
+            <div class="labelLeft">
+                <label for="peopleHazard">People</label>
+            </div>
+            <div class="labelRight">
+                <label for="environmentalHazard">Work Environment</label>
+            </div>
+
+        </div>
+
+
+        <div class="rowSelect">
+            <div class="selectLeft">
+                <div class="grp1">
+                    <input type="checkbox" name="people1" id="noAuth">
+                    <label for="notAuthorized">Not Authorized</label><br>
+                    <input type="checkbox" name="people2" id="noTrain">
+                    <label for="notAuthorized">Not Trained</label><br>
+                    <input type="checkbox" name="people3" id="noCom">
+                    <label for="notAuthorized">Communication</label><br>
+                    <input type="checkbox" name="people4" id="hazAware">
+                    <label for="notAuthorized">Hazard Awareness</label><br>
+                    <input type="checkbox" name="people5" id="Distract">
+                    <label for="notAuthorized">Distraction</label><br>
+                    <input type="checkbox" name="people6" id="wLoad">
+                    <label for="notAuthorized">Workload</label><br>
+                </div>
+                
+                <div class="grp2">
+                    
+                    <input type="checkbox" name="people7" id="Stress">
+                    <label for="notAuthorized">Stress</label><br>
+                    <input type="checkbox" name="people8" id="LPP">
+                    <label for="notAuthorized">Lifting / Push / Pull</label><br>
+                    <input type="checkbox" name="people9" id="hazIDex">
+                    <label for="notAuthorized">Hazard ID Experience</label><br>
+                    <input type="checkbox" name="people10" id="tMed">
+                    <label for="notAuthorized">Medication</label><br>
+                    <input type="checkbox" name="people11" id="tPed">
+                    <label for="notAuthorized">Pedestrian</label><br>
+                    <input type="checkbox" name="people12" id="tFat">
+                    <label for="notAuthorized">Fatigue</label><br>
+
+                </div>
+                
+                
+
+            </div>
+            <div class="selectRight">
+                <div class="grp1">
+                    <input type="checkbox" name="env1" id="eAccess">
+                    <label for="notAuthorized">Access</label><br>
+                    <input type="checkbox" name="env2" id="A_C">
+                    <label for="notAuthorized">Accel / Deccel</label><br>
+                    <input type="checkbox" name="env3" id="pErgo">
+                    <label for="notAuthorized">Poor Ergonomics</label><br>
+                    <input type="checkbox" name="env4" id="bPos">
+                    <label for="notAuthorized">Body Positioning</label><br>
+                    <input type="checkbox" name="env5" id="vibJarring">
+                    <label for="notAuthorized">Vibration / Joint / Jarring</label><br>
+                    <input type="checkbox" name="env6" id="gravity">
+                    <label for="notAuthorized">Gravity</label><br>
+                </div>
+                
+                <div class="grp2">
+                    
+                    <input type="checkbox" name="env7" id="fallObj">
+                    <label for="notAuthorized">Falling Objects</label><br>
+                    <input type="checkbox" name="env8" id="forObj">
+                    <label for="notAuthorized">Foreign Objects</label><br>
+                    <input type="checkbox" name="env9" id="lightViz">
+                    <label for="notAuthorized">Lighting / Visibility</label><br>
+                    <input type="checkbox" name="env10" id="Press">
+                    <label for="notAuthorized">Pressure</label><br>
+                    <input type="checkbox" name="env11" id="enRelease">
+                    <label for="notAuthorized">Energy Release</label><br>
+                    <input type="checkbox" name="env12" id="EnCons">
+                    <label for="notAuthorized">Energy Consumption</label><br>
+                </div>
+                
+                <div class="grp3">
+                    
+                    <input type="checkbox" name="env13" id="5S">
+                    <label for="notAuthorized">Housekeeping</label><br>
+                    <input type="checkbox" name="env14" id="shObj">
+                    <label for="notAuthorized">Sharp Objects</label><br>
+                    <input type="checkbox" name="env15" id="STF">
+                    <label for="notAuthorized">Slip / Trip / Fall</label><br>
+                    <input type="checkbox" name="env16" id="grStab">
+                    <label for="notAuthorized">Ground Stability</label><br>
+                    <input type="checkbox" name="env17" id="fumes">
+                    <label for="notAuthorized">Fumes</label><br>
+                    <input type="checkbox" name="env18" id="chem">
+                </div>
+                
+                <div class="grp4">
+                    
+                    <label for="notAuthorized">Chemicals</label><br>
+                    <input type="checkbox" name="env19" id="oils">
+                    <label for="notAuthorized">Oils</label><br>
+                    <input type="checkbox" name="env20" id="grease">
+                    <label for="notAuthorized">Grease</label><br>
+                    <input type="checkbox" name="env21" id="airMove">
+                    <label for="notAuthorized">Air Movement</label><br>
+                    <input type="checkbox" name="env22" id="vapour">
+                    <label for="notAuthorized">Vapour</label><br>
+                    <input type="checkbox" name="env23" id="WSS">
+                    <label for="notAuthorized">Work Surface Space</label><br>
+                    <input type="checkbox" name="env24" id="tempHum">
+                    <label for="notAuthorized">Temperature / Humidity</label><br>
+                </div>
+                
+                <div class="grp5">
+                    
+                    <input type="checkbox" name="env25" id="vizFog">
+                    <label for="notAuthorized">Visibility Fog Rain</label><br>
+                    <input type="checkbox" name="env26" id="lightning">
+                    <label for="notAuthorized">Lightning</label><br>
+                    <input type="checkbox" name="env27" id="sunEx">
+                    <label for="notAuthorized">Sun Exposure</label><br>
+                    <input type="checkbox" name="env28" id="noise">
+                    <label for="notAuthorized">Noise</label><br>
+                    <input type="checkbox" name="env29" id="dust">
+                    <label for="notAuthorized">Dust</label><br>
+                    <input type="checkbox" name="env30" id="radHeat">
+                    <label for="notAuthorized">Radiating Heat</label><br>    
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="hazardID">
+            <div class="labelLeft">
+                <label for="natureHazard">Environment Issues</label>
+            </div>
+            <div class="labelRight">
+                <label for="equipmentHazard">Equipment</label>
+            </div>
+
+        </div>
+
+        <div class="rowSelect">
+            <div class="selectLeft">
+                <div class="grp1">
+                    <input type="checkbox" name="nat1" id="Dust">
+                    <label for="notAuthorized">Dust</label><br>
+                    <input type="checkbox" name="nat2" id="enGreen">
+                    <label for="notAuthorized">Energy / Greenhouse</label><br>
+                    <input type="checkbox" name="nat3" id="wasWater">
+                    <label for="notAuthorized">Waste of Water</label><br>
+                    <input type="checkbox" name="nat4" id="spills">
+                    <label for="notAuthorized">Spills</label><br>
+                    <input type="checkbox" name="nat5" id="comImpact">
+                    <label for="notAuthorized">Community Impact</label><br>
+                    <input type="checkbox" name="nat6" id="noise">
+                    <label for="notAuthorized">Noise</label><br>
+                </div>
+                
+                <div class="grp2">
+                    
+                    <input type="checkbox" name="nat7" id="chemicals">
+                    <label for="notAuthorized">Chemicals</label><br>
+                    <input type="checkbox" name="nat8" id="watQual">
+                    <label for="notAuthorized">Water Quality</label><br>
+                    <input type="checkbox" name="nat9" id="wasDisp">
+                    <label for="notAuthorized">Waste Disposal</label><br>
+                    <input type="checkbox" name="nat10" id="wildlife">
+                    <label for="notAuthorized">Wildlife</label><br>
+                    <input type="checkbox" name="nat11" id="airEm">
+                    <label for="notAuthorized">Air Emission</label><br>
+                    <input type="checkbox" name="nat12" id="landDist">
+                    <label for="notAuthorized">Land Disturbance</label><br>
+                </div>
+                
+                
+                
+
+
+            </div>
+            <div class="selectRight">
+                <div class="grp1">
+                    <input type="checkbox" name="eqp1" id="Dust">
+                    <label for="notAuthorized">Caught in between</label><br>
+                    <input type="checkbox" name="eqp2" id="conArea">
+                    <label for="notAuthorized">Confined Area</label><br>
+                    <input type="checkbox" name="eqp3" id="construction">
+                    <label for="notAuthorized">Construction</label><br>
+                    <input type="checkbox" name="eqp4" id="design">
+                    <label for="notAuthorized">Design</label><br>
+                    <input type="checkbox" name="eqp5" id="electric">
+                    <label for="notAuthorized">Electricity</label><br>
+                    <input type="checkbox" name="eqp6" id="rotPart">
+                    <label for="notAuthorized">Rotating Parts</label><br>
+
+                </div>
+                
+                <div class="grp2">
+                    
+                    <input type="checkbox" name="eqp7" id="handTools">
+                    <label for="notAuthorized">HandTools</label><br>
+                    <input type="checkbox" name="eqp8" id="hydInject">
+                    <label for="notAuthorized">Hydraulic Injection</label><br>
+                    <input type="checkbox" name="eqp9" id="inspection">
+                    <label for="notAuthorized">Inspection</label><br>
+                    <input type="checkbox" name="eqp10" id="isolation">
+                    <label for="notAuthorized">Isolation</label><br>
+                    <input type="checkbox" name="eqp11" id="LOF">
+                    <label for="notAuthorized">Line of Fire</label><br>
+                    <input type="checkbox" name="eqp12" id="mods">
+                    <label for="notAuthorized">Modification</label><br>
+                </div>
+                
+                <div class="grp3">
+                    
+                    <input type="checkbox" name="eqp13" id="poorDisp">
+                    <label for="notAuthorized">Poor Display</label><br>
+                    <input type="checkbox" name="eqp14" id="storedEn">
+                    <label for="notAuthorized">StoreEnergy</label><br>
+                    <input type="checkbox" name="eqp15" id="testing">
+                    <label for="notAuthorized">Testing</label><br>
+                    <input type="checkbox" name="eqp16" id="tooling">
+                    <label for="notAuthorized">Tooling</label><br>
+                    <input type="checkbox" name="eqp17" id="trafficInt">
+                    <label for="notAuthorized">Traffic Interaction</label><br>
+                    <input type="checkbox" name="eqp18" id="sudMove">
+                    <label for="notAuthorized">Sudden Movement</label><br>
+                </div>
+                
+                <div class="grp4">
+                    
+                    <input type="checkbox" name="eqp19" id="objWeight">
+                    <label for="notAuthorized">Object Weight</label><br>
+                    <input type="checkbox" name="eqp20" id="strain">
+                    <label for="notAuthorized">Strain</label><br>  
+                    <input type="checkbox" name="eqp21" id="tooling">
+                    <label for="notAuthorized">Tooling</label><br>
+                    <input type="checkbox" name="eqp22" id="trafficInt">
+                    <label for="notAuthorized">Traffic Interaction</label><br>
+                    <input type="checkbox" name="eqp23" id="sudMove">
+                    <label for="notAuthorized">Sudden Movement</label><br>
+                    <input type="checkbox" name="eqp24" id="objWeight">
+                    <label for="notAuthorized">Object Weight</label><br>
+                </div>
+
+                <div class="grp5">
+                    
+                    <input type="checkbox" name="eqp25" id="strain">
+                    <label for="notAuthorized">Strain</label><br>
+               
+                    <input type="checkbox" name="eqp21" id="poorCont">
+                    <label for="notAuthorized">Poor Control</label><br>
+                    <input type="checkbox" name="eqp22" id="guarding">
+                    <label for="notAuthorized">Guarding</label><br>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+
+        
+        
+        
+
+
+    </form>
+</body>
+</html>

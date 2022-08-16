@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(248, 247, 225);
+}
+
+
+h1 {
+    color: aliceblue;
+    background-color: blue;
+}
+
+h2{
+    color: aliceblue;
+    background-color: blue;  
+}
+
+.hazardID {
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+    
+    
+}
+
+.locationColumn {
+    background-color: azure;
+    display: block;
+    position: relative;
+    padding-left: 45px;
+}
+.permitColumn {
+    background-color: rgb(199, 251, 210);
+}
+
+.locationColumn {
+    
+}
+
+.locSelection label {
+    line-height: 18px;
+
+}
+.locSelection input {
+    position: relative;
+    width: 13px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 12px;
+}
